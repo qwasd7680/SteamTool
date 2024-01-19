@@ -32,10 +32,12 @@ struct GameView: View {
                     .foregroundColor(.red)
             }
             Spacer()
-            Text(game.discountPercent)
-                .padding(5)
-                .background(Color.green)
-                .cornerRadius(5)
+            if game.discountPercent != ""{
+                Text(game.discountPercent)
+                    .padding(5)
+                    .background(Color.green)
+                    .cornerRadius(5)
+            }
         }
     }
 }
@@ -53,9 +55,10 @@ struct ContentView: View {
 
 struct searchView:View {
     @State var content:String = ""
-    @State var badNetwork = false
+    @State private var badNetwork = false
     @State var games:[Game] = []
     @State var isNotSearched = true
+    @State var num = 1
     
     var body: some View {
         ZStack{
@@ -70,11 +73,24 @@ struct searchView:View {
                     searchGame(content: content)
                     isNotSearched.toggle()
                 })
-                .padding()
             }else{
                     NavigationView {
-                        List(games) { game in
-                            GameView(game: game)
+                        ZStack{
+                            List(games) { game in
+                                GameView(game: game)
+                            }
+                            if games.isEmpty && !badNetwork{
+                                ProgressView()
+                            }
+                            if badNetwork{
+                                Button{
+                                    num += 1
+                                }label: {
+                                    Image(systemName:"network.slash")
+                                        .symbolEffect(.bounce.up.byLayer,value:num)
+                                        .font(.largeTitle)
+                                }.buttonStyle(PlainButtonStyle())
+                            }
                         }
                         }
                         .onAppear {
@@ -119,8 +135,6 @@ struct searchView:View {
                     let imgTag: Element = try! game.select("img").first()!
                     // 提取游戏图片
                     let pic = try imgTag.attr("src")
-                    // 获取评价
-                    let pingjia = try game.select("span.search_review_summary positive").text()
                     let game = Game(title: title, originalPrice: originalPrice, discountPrice: discountPrice , discountPercent: discountPercent,picurl: pic)
                     gamesArray.append(game)
                 }
@@ -155,7 +169,7 @@ struct MainView: View {
     
     var body: some View {
             ZStack{
-                NavigationView {
+                NavigationStack {
                     List(games) { game in
                         NavigationLink(destination: detailView(game: game)){
                             GameView(game: game)}
@@ -174,7 +188,10 @@ struct MainView: View {
                         }
                     }
                     .onAppear {
-                        getGames()
+                        if games.isEmpty{
+                            getGames()
+                        }
+                        print("Init")
                     }
                 }.alert(isPresented: $badNetwork, content: {
                     Alert(title: Text("网络请求失败"),dismissButton: .cancel())
@@ -234,6 +251,7 @@ struct MainView: View {
     
     
 }
+
 #Preview {
     ContentView()
 }
