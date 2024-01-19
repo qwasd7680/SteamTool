@@ -64,7 +64,7 @@ struct TeamView: View{
                         .foregroundColor(.gray)
                 }
             }
-            HStack{
+/*            HStack{
                 Image("缈姚头像")
                     .resizable()
                     .frame(width: 50, height: 50)
@@ -76,7 +76,7 @@ struct TeamView: View{
                         .font(.subheadline)
                         .foregroundColor(.gray)
                 }
-            }
+            }*/
         }
     }
 }

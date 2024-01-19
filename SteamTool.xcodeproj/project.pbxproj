@@ -10,11 +10,10 @@
 		6AAC96CB2AB488DF00AB3D25 /* SteamTool Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 6AAC96CA2AB488DF00AB3D25 /* SteamTool Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		6AAC96D02AB488DF00AB3D25 /* SteamToolApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAC96CF2AB488DF00AB3D25 /* SteamToolApp.swift */; };
 		6AAC96D22AB488DF00AB3D25 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAC96D12AB488DF00AB3D25 /* ContentView.swift */; };
-		6AAC96D42AB488E000AB3D25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC96D32AB488E000AB3D25 /* Assets.xcassets */; };
 		6AAC96D72AB488E000AB3D25 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC96D62AB488E000AB3D25 /* Preview Assets.xcassets */; };
 		6AAC96E42AB4907100AB3D25 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAC96E32AB4907100AB3D25 /* AboutView.swift */; };
 		6AAC96E92AB4AAF000AB3D25 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 6AAC96E82AB4AAF000AB3D25 /* SwiftSoup */; };
-		6AAC96EB2AB4AC7500AB3D25 /* GetGamesOnSale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAC96EA2AB4AC7500AB3D25 /* GetGamesOnSale.swift */; };
+		6AF0A5D22AC5B43500ACC95E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AF0A5D12AC5B43500ACC95E /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,10 +45,9 @@
 		6AAC96CA2AB488DF00AB3D25 /* SteamTool Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SteamTool Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AAC96CF2AB488DF00AB3D25 /* SteamToolApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteamToolApp.swift; sourceTree = "<group>"; };
 		6AAC96D12AB488DF00AB3D25 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		6AAC96D32AB488E000AB3D25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6AAC96D62AB488E000AB3D25 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6AAC96E32AB4907100AB3D25 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
-		6AAC96EA2AB4AC7500AB3D25 /* GetGamesOnSale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetGamesOnSale.swift; sourceTree = "<group>"; };
+		6AF0A5D12AC5B43500ACC95E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,10 +83,9 @@
 			isa = PBXGroup;
 			children = (
 				6AAC96CF2AB488DF00AB3D25 /* SteamToolApp.swift */,
-				6AAC96EA2AB4AC7500AB3D25 /* GetGamesOnSale.swift */,
 				6AAC96D12AB488DF00AB3D25 /* ContentView.swift */,
 				6AAC96E32AB4907100AB3D25 /* AboutView.swift */,
-				6AAC96D32AB488E000AB3D25 /* Assets.xcassets */,
+				6AF0A5D12AC5B43500ACC95E /* Assets.xcassets */,
 				6AAC96D52AB488E000AB3D25 /* Preview Content */,
 			);
 			path = "SteamTool Watch App";
@@ -194,8 +191,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AF0A5D22AC5B43500ACC95E /* Assets.xcassets in Resources */,
 				6AAC96D72AB488E000AB3D25 /* Preview Assets.xcassets in Resources */,
-				6AAC96D42AB488E000AB3D25 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,7 +205,6 @@
 			files = (
 				6AAC96D22AB488DF00AB3D25 /* ContentView.swift in Sources */,
 				6AAC96E42AB4907100AB3D25 /* AboutView.swift in Sources */,
-				6AAC96EB2AB4AC7500AB3D25 /* GetGamesOnSale.swift in Sources */,
 				6AAC96D02AB488DF00AB3D25 /* SteamToolApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
