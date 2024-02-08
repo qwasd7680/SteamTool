@@ -26,6 +26,13 @@ struct AboutView: View {
                             Text("开发团队")
                         }
                     }
+                    NavigationLink(destination: Xuke()){
+                        HStack {
+                            Image(systemName: "shippingbox")
+                                .foregroundColor(.blue)
+                            Text(" 开源组件许可")
+                        }
+                    }
 //                    HStack {
 //                        Image(systemName: "star")
 //                            .foregroundColor(.blue)
@@ -64,6 +71,26 @@ struct TeamView: View{
                         .foregroundColor(.gray)
                 }
             }
+            HStack {
+                Image("幼雾酱头像")
+                    .resizable()
+                    .frame(width: 50, height: 50)
+                    .clipShape(Circle())
+                VStack(alignment: .leading) {
+                    Text("幼雾酱")
+                        .font(.title)
+                    Text("图标设计")
+                        .font(.subheadline)
+                        .foregroundColor(.gray)
+                }
+            }
+            NavigationLink(destination: TebiemingxieView()){
+                HStack {
+                    Image(systemName: "fireworks")
+                        .foregroundColor(.red)
+                    Text("特别鸣谢")
+                }
+            }
 /*            HStack{
                 Image("缈姚头像")
                     .resizable()
@@ -88,6 +115,43 @@ struct About:View {
                 Text("开发者是一名高中生，因为在学校里常年不知道Steam促销的信息而经常错过打折，于是写了这款软件，方便在学校里查看Steam的促销信息")
                 Text("希望它也能帮助您不落下每一次促销")
                 Text("使用愉快🌹🌹")
+            }
+        }
+    }
+}
+
+struct Xuke:View {
+    let openSourceTexts = """
+                --- SwiftSoup ---
+                Licensed under MIT license
+                -----------------
+                
+                 --- SFSymbol ---
+                Licensed under MIT license
+                ----------------
+
+                """
+    var body: some View {
+        ScrollView{
+            Text(openSourceTexts)
+        }
+    }
+}
+
+struct TebiemingxieView:View {
+    var body: some View {
+        Form{
+            HStack {
+                Image("MEMZ头像")
+                    .resizable()
+                    .frame(width: 50, height: 50)
+                    .clipShape(Circle())
+                VStack(alignment: .leading) {
+                    Text("WindowsMEMZ")
+                    Text("提了很多建议")
+                        .font(.subheadline)
+                        .foregroundColor(.gray)
+                }
             }
         }
     }

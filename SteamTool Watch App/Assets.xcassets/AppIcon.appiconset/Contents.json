@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "WatchAppStore.png",
+      "filename" : "GameWatcher.png",
       "idiom" : "universal",
       "platform" : "watchos",
       "size" : "1024x1024"
