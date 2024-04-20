@@ -65,7 +65,7 @@ struct TeamView: View{
                     .clipShape(Circle())
                 VStack(alignment: .leading) {
                     Text("qwasd")
-                        .font(.title)
+                        .font(.title3)
                     Text("开发者")
                         .font(.subheadline)
                         .foregroundColor(.gray)
@@ -78,8 +78,21 @@ struct TeamView: View{
                     .clipShape(Circle())
                 VStack(alignment: .leading) {
                     Text("幼雾酱")
-                        .font(.title)
+                        .font(.title3)
                     Text("图标设计")
+                        .font(.subheadline)
+                        .foregroundColor(.gray)
+                }
+            }
+            HStack {
+                Image("785头像")
+                    .resizable()
+                    .frame(width: 50, height: 50)
+                    .clipShape(Circle())
+                VStack(alignment: .leading) {
+                    Text("ThreeManager785")
+                        .font(.title3)
+                    Text("英文翻译")
                         .font(.subheadline)
                         .foregroundColor(.gray)
                 }
@@ -128,7 +141,11 @@ struct Xuke:View {
                 
                  --- SFSymbol ---
                 Licensed under MIT license
-                ----------------
+                -----------------
+                
+                 -- CachedAsyncImage --
+                Licensed under MIT license
+                -----------------------
 
                 """
     var body: some View {

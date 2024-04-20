@@ -1,14 +1,24 @@
 {
+  "originHash" : "361a8b6b78c13fe563385d4b97b544131138ef537f415a65f2cfb19c3843eaaf",
   "pins" : [
+    {
+      "identity" : "cachedasyncimage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/bullinnyc/CachedAsyncImage",
+      "state" : {
+        "revision" : "6babc1e261e9209faf1745ccaa4c7a867814ca7e",
+        "version" : "2.5.0"
+      }
+    },
     {
       "identity" : "swiftsoup",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/scinfu/SwiftSoup.git",
       "state" : {
-        "revision" : "8b6cf29eead8841a1fa7822481cb3af4ddaadba6",
-        "version" : "2.6.1"
+        "revision" : "f83c097597094a04124eb6e0d1e894d24129af87",
+        "version" : "2.7.0"
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }
