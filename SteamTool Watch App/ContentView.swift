@@ -2,11 +2,12 @@
 //  ContentView.swift
 //  SteamTool Watch App
 //
-//  Created by 周敬博 on 2023/9/15.
+//  Created by Maverick Charmer on 2023/9/15.
 //
 
 import SwiftUI
 import SwiftSoup
+import CachedAsyncImage
 
 struct Game: Identifiable {
     let id = UUID()
@@ -77,7 +78,8 @@ struct searchView:View {
                     NavigationView {
                         ZStack{
                             List(games) { game in
-                                GameView(game: game)
+                                NavigationLink(destination: detailView(game: game)){
+                                    GameView(game: game)}
                             }
                             if games.isEmpty && !badNetwork{
                                 ProgressView()
@@ -151,14 +153,44 @@ struct searchView:View {
 
 struct detailView:View {
     let game: Game
+    private static let standartPadding: CGFloat = 20
     
     var body: some View {
-        VStack{
-            AsyncImage(url: URL(string: game.picurl))
-            GameView(game: game)
-            Section{
+        GeometryReader { geometry in
+            let size = geometry.size
+            VStack{
+                CachedAsyncImage(url:game.picurl,placeholder: { progress in
+                    // Create any view for placeholder (optional).
+                    placeholder(progress)
+                },
+                                 image: {
+                    // Customize image.
+                    Image(cpImage: $0)
+//                        .resizable()
+//                        .scaledToFill()
+                },
+                                 error: { error, retry in
+                    // Create any view for error (optional).
+                    self.error(error, action: retry)
+                })
+                .frame(
+                    maxWidth: size.width - Self.standartPadding * 2,
+                    idealHeight:
+                        getIdealHeight(
+                            geometrySize: size,
+                            aspectRatio: 2 / 3
+                        )
+                )
+                GameView(game: game)
             }
         }
+    }
+    private func getIdealHeight(
+        geometrySize: CGSize,
+        aspectRatio: CGFloat
+    ) -> CGFloat {
+        let width = geometrySize.width - Self.standartPadding * 2
+        return width / aspectRatio
     }
 }
 
@@ -251,6 +283,56 @@ struct MainView: View {
     
     
 }
+
+extension detailView {
+    func placeholder(_ progress: String) -> some View {
+        ZStack {
+            Color.yellow
+            
+            ProgressView() {
+                VStack {
+                    Text("Downloading...")
+                    
+                    Text("\(progress) %")
+                }
+            }
+        }
+    }
+    
+    func error(_ error: String, action: (() -> Void)? = nil) -> some View {
+        ZStack {
+            Color.yellow
+            
+            VStack {
+                Group {
+                    Text("Error:")
+                        .bold()
+                    
+                    Text(error)
+                }
+                .font(.footnote)
+                .multilineTextAlignment(.center)
+                .foregroundStyle(.red)
+                
+                retry(action: action)
+                    .padding(.top)
+            }
+            .padding()
+        }
+    }
+    
+    func retry(action: (() -> Void)?) -> some View {
+        Button(
+            action: { action?() },
+            label: {
+                Text("Retry")
+                    .foregroundStyle(.black)
+                    .opacity(0.8)
+            }
+        )
+    }
+}
+
 
 #Preview {
     ContentView()
