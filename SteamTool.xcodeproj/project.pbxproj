@@ -11,6 +11,10 @@
 		6A108C842BD3C0C800CE755E /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 6A108C822BD3C0C800CE755E /* Localizable.xcstrings */; };
 		6A37CB3C2BADBBCA008BEA64 /* CachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = 6A37CB3B2BADBBCA008BEA64 /* CachedAsyncImage */; };
 		6A37CB3E2BADBBCA008BEA64 /* ExampleCachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = 6A37CB3D2BADBBCA008BEA64 /* ExampleCachedAsyncImage */; };
+		6A108C832BD3C0C800CE755E /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 6A108C822BD3C0C800CE755E /* Localizable.xcstrings */; };
+		6A108C842BD3C0C800CE755E /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 6A108C822BD3C0C800CE755E /* Localizable.xcstrings */; };
+		6A37CB3C2BADBBCA008BEA64 /* CachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = 6A37CB3B2BADBBCA008BEA64 /* CachedAsyncImage */; };
+		6A37CB3E2BADBBCA008BEA64 /* ExampleCachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = 6A37CB3D2BADBBCA008BEA64 /* ExampleCachedAsyncImage */; };
 		6AAC96CB2AB488DF00AB3D25 /* GameWatcher.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 6AAC96CA2AB488DF00AB3D25 /* GameWatcher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		6AAC96D02AB488DF00AB3D25 /* SteamToolApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAC96CF2AB488DF00AB3D25 /* SteamToolApp.swift */; };
 		6AAC96D22AB488DF00AB3D25 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAC96D12AB488DF00AB3D25 /* ContentView.swift */; };
@@ -62,6 +66,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6ABDDCDC2BF799C20089735E /* CepheusKeyboardKit in Frameworks */,
+				6A37CB3E2BADBBCA008BEA64 /* ExampleCachedAsyncImage in Frameworks */,
 				6A37CB3E2BADBBCA008BEA64 /* ExampleCachedAsyncImage in Frameworks */,
 				6AAC96E92AB4AAF000AB3D25 /* SwiftSoup in Frameworks */,
 				6A37CB3C2BADBBCA008BEA64 /* CachedAsyncImage in Frameworks */,
@@ -147,6 +152,8 @@
 				6A37CB3B2BADBBCA008BEA64 /* CachedAsyncImage */,
 				6A37CB3D2BADBBCA008BEA64 /* ExampleCachedAsyncImage */,
 				6ABDDCDB2BF799C20089735E /* CepheusKeyboardKit */,
+				6A37CB3B2BADBBCA008BEA64 /* CachedAsyncImage */,
+				6A37CB3D2BADBBCA008BEA64 /* ExampleCachedAsyncImage */,
 			);
 			productName = "SteamTool Watch App";
 			productReference = 6AAC96CA2AB488DF00AB3D25 /* GameWatcher.app */;
@@ -184,6 +191,7 @@
 				6AAC96E72AB4AAF000AB3D25 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
 				6A37CB3A2BADBBCA008BEA64 /* XCRemoteSwiftPackageReference "CachedAsyncImage" */,
 				6ABDDCDA2BF799C20089735E /* XCRemoteSwiftPackageReference "Cepheus" */,
+				6A37CB3A2BADBBCA008BEA64 /* XCRemoteSwiftPackageReference "CachedAsyncImage" */,
 			);
 			productRefGroup = 6AAC96C52AB488DF00AB3D25 /* Products */;
 			projectDirPath = "";
@@ -358,6 +366,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
