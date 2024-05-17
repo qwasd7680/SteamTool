@@ -8,6 +8,7 @@
 import SwiftUI
 import SwiftSoup
 import CachedAsyncImage
+import CepheusKeyboardKit
 
 struct Game: Identifiable {
     let id = UUID()
@@ -64,13 +65,9 @@ struct searchView:View {
     var body: some View {
         ZStack{
             if isNotSearched {
-                TextField("请输入游戏名",
-                          text: $content,
-                          onEditingChanged: { isEditing in
-                    print("onEditingChanged::\(content)")
-                },
-                          onCommit: {
-                    print("onCommit::\(content)")
+                CepheusKeyboard(input: $content,
+                                prompt: "请输入游戏名",
+                                onSubmit: {
                     searchGame(content: content)
                     isNotSearched.toggle()
                 })

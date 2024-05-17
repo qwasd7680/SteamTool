@@ -46,6 +46,16 @@ struct AboutView: View {
                             Link("sjbstudio233@gmail.com", destination: URL(string: "mailto:$sjbstudio233@gmail.com")!)
                         }
                 }
+                Section(header: Text("Cepheus Keyboard")) {
+                        HStack {
+                            Image(systemName: "keyboard")
+                                .foregroundColor(.blue)
+                            Text("Powered by Cepheus Keyboard")
+                                .font(.footnote)
+                                .foregroundColor(.blue)
+                                .multilineTextAlignment(.center)
+                        }
+                }
             }
         }
     }
@@ -145,6 +155,10 @@ struct Xuke:View {
                 
                  -- CachedAsyncImage --
                 Licensed under MIT license
+                -----------------------
+                
+                 - CepheusKeyboardKit -
+                Licensed under Apache-2.0 license
                 -----------------------
 
                 """

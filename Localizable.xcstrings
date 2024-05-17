@@ -36,6 +36,9 @@
     "%@ %%" : {
 
     },
+    "Cepheus Keyboard" : {
+
+    },
     "Downloading..." : {
       "localizations" : {
         "en" : {
@@ -55,6 +58,9 @@
           }
         }
       }
+    },
+    "Powered by Cepheus Keyboard" : {
+
     },
     "qwasd" : {
       "localizations" : {
