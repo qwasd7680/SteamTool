@@ -1,6 +1,25 @@
 {
+  "originHash" : "a31844608e5df9efb0e586a71ad9dcb77bd6f2ad901b0526dee3a70a1ccc62c6",
   "originHash" : "361a8b6b78c13fe563385d4b97b544131138ef537f415a65f2cfb19c3843eaaf",
   "pins" : [
+    {
+      "identity" : "cachedasyncimage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/bullinnyc/CachedAsyncImage",
+      "state" : {
+        "revision" : "6babc1e261e9209faf1745ccaa4c7a867814ca7e",
+        "version" : "2.5.0"
+      }
+    },
+    {
+      "identity" : "cepheus",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Serene-Garden/Cepheus.git",
+      "state" : {
+        "revision" : "b9f364c60d93cd3b01a5243abd62a562c51777a0",
+        "version" : "1.3.2"
+      }
+    },
     {
       "identity" : "cachedasyncimage",
       "kind" : "remoteSourceControl",

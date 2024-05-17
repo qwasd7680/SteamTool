@@ -36,6 +36,12 @@
     "%@ %%" : {
 
     },
+<<<<<<< HEAD
+    "Cepheus Keyboard" : {
+
+    },
+=======
+>>>>>>> 10ce16edf459c0775586a3ca3b3c351caa58012b
     "Downloading..." : {
       "localizations" : {
         "en" : {
@@ -56,6 +62,12 @@
         }
       }
     },
+<<<<<<< HEAD
+    "Powered by Cepheus Keyboard" : {
+
+    },
+=======
+>>>>>>> 10ce16edf459c0775586a3ca3b3c351caa58012b
     "qwasd" : {
       "localizations" : {
         "en" : {

@@ -11,12 +11,17 @@
 		6A108C842BD3C0C800CE755E /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 6A108C822BD3C0C800CE755E /* Localizable.xcstrings */; };
 		6A37CB3C2BADBBCA008BEA64 /* CachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = 6A37CB3B2BADBBCA008BEA64 /* CachedAsyncImage */; };
 		6A37CB3E2BADBBCA008BEA64 /* ExampleCachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = 6A37CB3D2BADBBCA008BEA64 /* ExampleCachedAsyncImage */; };
+		6A108C832BD3C0C800CE755E /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 6A108C822BD3C0C800CE755E /* Localizable.xcstrings */; };
+		6A108C842BD3C0C800CE755E /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 6A108C822BD3C0C800CE755E /* Localizable.xcstrings */; };
+		6A37CB3C2BADBBCA008BEA64 /* CachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = 6A37CB3B2BADBBCA008BEA64 /* CachedAsyncImage */; };
+		6A37CB3E2BADBBCA008BEA64 /* ExampleCachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = 6A37CB3D2BADBBCA008BEA64 /* ExampleCachedAsyncImage */; };
 		6AAC96CB2AB488DF00AB3D25 /* GameWatcher.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 6AAC96CA2AB488DF00AB3D25 /* GameWatcher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		6AAC96D02AB488DF00AB3D25 /* SteamToolApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAC96CF2AB488DF00AB3D25 /* SteamToolApp.swift */; };
 		6AAC96D22AB488DF00AB3D25 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAC96D12AB488DF00AB3D25 /* ContentView.swift */; };
 		6AAC96D72AB488E000AB3D25 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC96D62AB488E000AB3D25 /* Preview Assets.xcassets */; };
 		6AAC96E42AB4907100AB3D25 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAC96E32AB4907100AB3D25 /* AboutView.swift */; };
 		6AAC96E92AB4AAF000AB3D25 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 6AAC96E82AB4AAF000AB3D25 /* SwiftSoup */; };
+		6ABDDCDC2BF799C20089735E /* CepheusKeyboardKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6ABDDCDB2BF799C20089735E /* CepheusKeyboardKit */; };
 		6AF0A5D22AC5B43500ACC95E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AF0A5D12AC5B43500ACC95E /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ABDDCDC2BF799C20089735E /* CepheusKeyboardKit in Frameworks */,
+				6A37CB3E2BADBBCA008BEA64 /* ExampleCachedAsyncImage in Frameworks */,
 				6A37CB3E2BADBBCA008BEA64 /* ExampleCachedAsyncImage in Frameworks */,
 				6AAC96E92AB4AAF000AB3D25 /* SwiftSoup in Frameworks */,
 				6A37CB3C2BADBBCA008BEA64 /* CachedAsyncImage in Frameworks */,
@@ -144,6 +151,9 @@
 				6AAC96E82AB4AAF000AB3D25 /* SwiftSoup */,
 				6A37CB3B2BADBBCA008BEA64 /* CachedAsyncImage */,
 				6A37CB3D2BADBBCA008BEA64 /* ExampleCachedAsyncImage */,
+				6ABDDCDB2BF799C20089735E /* CepheusKeyboardKit */,
+				6A37CB3B2BADBBCA008BEA64 /* CachedAsyncImage */,
+				6A37CB3D2BADBBCA008BEA64 /* ExampleCachedAsyncImage */,
 			);
 			productName = "SteamTool Watch App";
 			productReference = 6AAC96CA2AB488DF00AB3D25 /* GameWatcher.app */;
@@ -179,6 +189,8 @@
 			mainGroup = 6AAC96BD2AB488DE00AB3D25;
 			packageReferences = (
 				6AAC96E72AB4AAF000AB3D25 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+				6A37CB3A2BADBBCA008BEA64 /* XCRemoteSwiftPackageReference "CachedAsyncImage" */,
+				6ABDDCDA2BF799C20089735E /* XCRemoteSwiftPackageReference "Cepheus" */,
 				6A37CB3A2BADBBCA008BEA64 /* XCRemoteSwiftPackageReference "CachedAsyncImage" */,
 			);
 			productRefGroup = 6AAC96C52AB488DF00AB3D25 /* Products */;
@@ -353,9 +365,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"SteamTool Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = 32HF9YRXNS;
 				ENABLE_PREVIEWS = YES;
@@ -366,7 +380,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Maverick-Charmer.SteamTool.watchkitapp";
 				PRODUCT_NAME = GameWatcher;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -384,8 +398,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"SteamTool Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = 32HF9YRXNS;
 				ENABLE_PREVIEWS = YES;
@@ -396,7 +411,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Maverick-Charmer.SteamTool.watchkitapp";
 				PRODUCT_NAME = GameWatcher;
 				SDKROOT = watchos;
@@ -415,10 +430,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 32HF9YRXNS;
-				INFOPLIST_KEY_CFBundleDisplayName = SteamTool;
-				MARKETING_VERSION = 1.1;
+				INFOPLIST_KEY_CFBundleDisplayName = GameWatcher;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Maverick-Charmer.SteamTool";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -432,10 +447,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 32HF9YRXNS;
-				INFOPLIST_KEY_CFBundleDisplayName = SteamTool;
-				MARKETING_VERSION = 1.1;
+				INFOPLIST_KEY_CFBundleDisplayName = GameWatcher;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Maverick-Charmer.SteamTool";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -493,6 +508,14 @@
 				minimumVersion = 2.6.1;
 			};
 		};
+		6ABDDCDA2BF799C20089735E /* XCRemoteSwiftPackageReference "Cepheus" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Serene-Garden/Cepheus.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -510,6 +533,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 6AAC96E72AB4AAF000AB3D25 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
 			productName = SwiftSoup;
+		};
+		6ABDDCDB2BF799C20089735E /* CepheusKeyboardKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6ABDDCDA2BF799C20089735E /* XCRemoteSwiftPackageReference "Cepheus" */;
+			productName = CepheusKeyboardKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
