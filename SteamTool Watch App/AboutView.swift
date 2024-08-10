@@ -7,6 +7,7 @@
 
 import SwiftUI
 import SDWebImageSwiftUI
+import AuthenticationServices
 
 struct AboutView: View {
     var body: some View {
@@ -50,11 +51,23 @@ struct AboutView: View {
                     }
                 }
                 Section(header: Text("备案号")) {
-                    Text("浙ICP备2024071295号-16A")
+                    Button(action:{icp()}){
+                        Text("浙ICP备2024071295号-16A")
+                    }
                 }
 
             }
         }
+    }
+    func icp(){
+        let session = ASWebAuthenticationSession(
+          url: URL(string: "https://beian.miit.gov.cn")!,
+          callbackURLScheme: nil
+        ) { _, _ in
+          
+        }
+        session.prefersEphemeralWebBrowserSession = true
+        session.start()
     }
 }
 
