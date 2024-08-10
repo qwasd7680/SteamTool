@@ -9,19 +9,15 @@
 /* Begin PBXBuildFile section */
 		6A108C832BD3C0C800CE755E /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 6A108C822BD3C0C800CE755E /* Localizable.xcstrings */; };
 		6A108C842BD3C0C800CE755E /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 6A108C822BD3C0C800CE755E /* Localizable.xcstrings */; };
-		6A37CB3C2BADBBCA008BEA64 /* CachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = 6A37CB3B2BADBBCA008BEA64 /* CachedAsyncImage */; };
-		6A37CB3E2BADBBCA008BEA64 /* ExampleCachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = 6A37CB3D2BADBBCA008BEA64 /* ExampleCachedAsyncImage */; };
-		6A108C832BD3C0C800CE755E /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 6A108C822BD3C0C800CE755E /* Localizable.xcstrings */; };
-		6A108C842BD3C0C800CE755E /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 6A108C822BD3C0C800CE755E /* Localizable.xcstrings */; };
-		6A37CB3C2BADBBCA008BEA64 /* CachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = 6A37CB3B2BADBBCA008BEA64 /* CachedAsyncImage */; };
-		6A37CB3E2BADBBCA008BEA64 /* ExampleCachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = 6A37CB3D2BADBBCA008BEA64 /* ExampleCachedAsyncImage */; };
+		6A53715E2C5F110000F70E16 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 6A53715D2C5F110000F70E16 /* SwiftSoup */; };
+		6A5371602C5F115900F70E16 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 6A53715F2C5F115900F70E16 /* SDWebImageSwiftUI */; };
+		6A5371622C5F12B100F70E16 /* Cepheus in Frameworks */ = {isa = PBXBuildFile; productRef = 6A5371612C5F12B100F70E16 /* Cepheus */; };
+		6A5371CE2C5F147600F70E16 /* qwasd头像.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6A5371CD2C5F147600F70E16 /* qwasd头像.gif */; };
 		6AAC96CB2AB488DF00AB3D25 /* GameWatcher.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 6AAC96CA2AB488DF00AB3D25 /* GameWatcher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		6AAC96D02AB488DF00AB3D25 /* SteamToolApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAC96CF2AB488DF00AB3D25 /* SteamToolApp.swift */; };
 		6AAC96D22AB488DF00AB3D25 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAC96D12AB488DF00AB3D25 /* ContentView.swift */; };
 		6AAC96D72AB488E000AB3D25 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC96D62AB488E000AB3D25 /* Preview Assets.xcassets */; };
 		6AAC96E42AB4907100AB3D25 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAC96E32AB4907100AB3D25 /* AboutView.swift */; };
-		6AAC96E92AB4AAF000AB3D25 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 6AAC96E82AB4AAF000AB3D25 /* SwiftSoup */; };
-		6ABDDCDC2BF799C20089735E /* CepheusKeyboardKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6ABDDCDB2BF799C20089735E /* CepheusKeyboardKit */; };
 		6AF0A5D22AC5B43500ACC95E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AF0A5D12AC5B43500ACC95E /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		6A108C822BD3C0C800CE755E /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		6A5371CD2C5F147600F70E16 /* qwasd头像.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "qwasd头像.gif"; sourceTree = "<group>"; };
 		6AAC96C42AB488DF00AB3D25 /* SteamTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SteamTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AAC96CA2AB488DF00AB3D25 /* GameWatcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameWatcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AAC96CF2AB488DF00AB3D25 /* SteamToolApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteamToolApp.swift; sourceTree = "<group>"; };
@@ -65,11 +62,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6ABDDCDC2BF799C20089735E /* CepheusKeyboardKit in Frameworks */,
-				6A37CB3E2BADBBCA008BEA64 /* ExampleCachedAsyncImage in Frameworks */,
-				6A37CB3E2BADBBCA008BEA64 /* ExampleCachedAsyncImage in Frameworks */,
-				6AAC96E92AB4AAF000AB3D25 /* SwiftSoup in Frameworks */,
-				6A37CB3C2BADBBCA008BEA64 /* CachedAsyncImage in Frameworks */,
+				6A5371622C5F12B100F70E16 /* Cepheus in Frameworks */,
+				6A5371602C5F115900F70E16 /* SDWebImageSwiftUI in Frameworks */,
+				6A53715E2C5F110000F70E16 /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +92,7 @@
 		6AAC96CE2AB488DF00AB3D25 /* SteamTool Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				6A5371CD2C5F147600F70E16 /* qwasd头像.gif */,
 				6AAC96CF2AB488DF00AB3D25 /* SteamToolApp.swift */,
 				6AAC96D12AB488DF00AB3D25 /* ContentView.swift */,
 				6AAC96E32AB4907100AB3D25 /* AboutView.swift */,
@@ -148,12 +144,9 @@
 			);
 			name = "SteamTool Watch App";
 			packageProductDependencies = (
-				6AAC96E82AB4AAF000AB3D25 /* SwiftSoup */,
-				6A37CB3B2BADBBCA008BEA64 /* CachedAsyncImage */,
-				6A37CB3D2BADBBCA008BEA64 /* ExampleCachedAsyncImage */,
-				6ABDDCDB2BF799C20089735E /* CepheusKeyboardKit */,
-				6A37CB3B2BADBBCA008BEA64 /* CachedAsyncImage */,
-				6A37CB3D2BADBBCA008BEA64 /* ExampleCachedAsyncImage */,
+				6A53715D2C5F110000F70E16 /* SwiftSoup */,
+				6A53715F2C5F115900F70E16 /* SDWebImageSwiftUI */,
+				6A5371612C5F12B100F70E16 /* Cepheus */,
 			);
 			productName = "SteamTool Watch App";
 			productReference = 6AAC96CA2AB488DF00AB3D25 /* GameWatcher.app */;
@@ -179,7 +172,7 @@
 			};
 			buildConfigurationList = 6AAC96C12AB488DE00AB3D25 /* Build configuration list for PBXProject "SteamTool" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = "zh-Hans";
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -188,10 +181,9 @@
 			);
 			mainGroup = 6AAC96BD2AB488DE00AB3D25;
 			packageReferences = (
-				6AAC96E72AB4AAF000AB3D25 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
-				6A37CB3A2BADBBCA008BEA64 /* XCRemoteSwiftPackageReference "CachedAsyncImage" */,
-				6ABDDCDA2BF799C20089735E /* XCRemoteSwiftPackageReference "Cepheus" */,
-				6A37CB3A2BADBBCA008BEA64 /* XCRemoteSwiftPackageReference "CachedAsyncImage" */,
+				6A53715A2C5F0EC000F70E16 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				6A53715B2C5F0ECE00F70E16 /* XCRemoteSwiftPackageReference "Cepheus" */,
+				6A53715C2C5F0FB100F70E16 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
 			);
 			productRefGroup = 6AAC96C52AB488DF00AB3D25 /* Products */;
 			projectDirPath = "";
@@ -218,6 +210,7 @@
 			files = (
 				6AF0A5D22AC5B43500ACC95E /* Assets.xcassets in Resources */,
 				6AAC96D72AB488E000AB3D25 /* Preview Assets.xcassets in Resources */,
+				6A5371CE2C5F147600F70E16 /* qwasd头像.gif in Resources */,
 				6A108C842BD3C0C800CE755E /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,20 +360,20 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SteamTool Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = 32HF9YRXNS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = GameWatcher;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Maverick-Charmer.SteamTool.watchkitapp";
 				PRODUCT_NAME = GameWatcher;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -400,18 +393,19 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SteamTool Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = 32HF9YRXNS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = GameWatcher;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Maverick-Charmer.SteamTool.watchkitapp";
 				PRODUCT_NAME = GameWatcher;
 				SDKROOT = watchos;
@@ -430,10 +424,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 32HF9YRXNS;
 				INFOPLIST_KEY_CFBundleDisplayName = GameWatcher;
-				MARKETING_VERSION = 1.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Maverick-Charmer.SteamTool";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -447,10 +442,11 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 32HF9YRXNS;
 				INFOPLIST_KEY_CFBundleDisplayName = GameWatcher;
-				MARKETING_VERSION = 1.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Maverick-Charmer.SteamTool";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -492,52 +488,47 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		6A37CB3A2BADBBCA008BEA64 /* XCRemoteSwiftPackageReference "CachedAsyncImage" */ = {
+		6A53715A2C5F0EC000F70E16 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/bullinnyc/CachedAsyncImage";
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 2.5.0;
+				minimumVersion = 3.1.1;
 			};
 		};
-		6AAC96E72AB4AAF000AB3D25 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+		6A53715B2C5F0ECE00F70E16 /* XCRemoteSwiftPackageReference "Cepheus" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/scinfu/SwiftSoup.git";
+			repositoryURL = "https://github.com/Serene-Garden/Cepheus";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.6.1;
+				branch = main;
+				kind = branch;
 			};
 		};
-		6ABDDCDA2BF799C20089735E /* XCRemoteSwiftPackageReference "Cepheus" */ = {
+		6A53715C2C5F0FB100F70E16 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Serene-Garden/Cepheus.git";
+			repositoryURL = "https://github.com/scinfu/SwiftSoup";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
+				minimumVersion = 2.7.3;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		6A37CB3B2BADBBCA008BEA64 /* CachedAsyncImage */ = {
+		6A53715D2C5F110000F70E16 /* SwiftSoup */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6A37CB3A2BADBBCA008BEA64 /* XCRemoteSwiftPackageReference "CachedAsyncImage" */;
-			productName = CachedAsyncImage;
-		};
-		6A37CB3D2BADBBCA008BEA64 /* ExampleCachedAsyncImage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6A37CB3A2BADBBCA008BEA64 /* XCRemoteSwiftPackageReference "CachedAsyncImage" */;
-			productName = ExampleCachedAsyncImage;
-		};
-		6AAC96E82AB4AAF000AB3D25 /* SwiftSoup */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6AAC96E72AB4AAF000AB3D25 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			package = 6A53715C2C5F0FB100F70E16 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
 			productName = SwiftSoup;
 		};
-		6ABDDCDB2BF799C20089735E /* CepheusKeyboardKit */ = {
+		6A53715F2C5F115900F70E16 /* SDWebImageSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6ABDDCDA2BF799C20089735E /* XCRemoteSwiftPackageReference "Cepheus" */;
-			productName = CepheusKeyboardKit;
+			package = 6A53715A2C5F0EC000F70E16 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		6A5371612C5F12B100F70E16 /* Cepheus */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6A53715B2C5F0ECE00F70E16 /* XCRemoteSwiftPackageReference "Cepheus" */;
+			productName = Cepheus;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
