@@ -381,7 +381,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.4;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Maverick-Charmer.SteamTool.watchkitapp";
 				PRODUCT_NAME = GameWatcher;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -413,7 +413,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.4;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Maverick-Charmer.SteamTool.watchkitapp";
 				PRODUCT_NAME = GameWatcher;
 				SDKROOT = watchos;
@@ -436,7 +436,7 @@
 				DEVELOPMENT_TEAM = 32HF9YRXNS;
 				INFOPLIST_KEY_CFBundleDisplayName = GameWatcher;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 1.4;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Maverick-Charmer.SteamTool";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -454,7 +454,7 @@
 				DEVELOPMENT_TEAM = 32HF9YRXNS;
 				INFOPLIST_KEY_CFBundleDisplayName = GameWatcher;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 1.4;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Maverick-Charmer.SteamTool";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
