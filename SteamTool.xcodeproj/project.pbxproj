@@ -11,8 +11,10 @@
 		6A108C842BD3C0C800CE755E /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 6A108C822BD3C0C800CE755E /* Localizable.xcstrings */; };
 		6A53715E2C5F110000F70E16 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 6A53715D2C5F110000F70E16 /* SwiftSoup */; };
 		6A5371602C5F115900F70E16 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 6A53715F2C5F115900F70E16 /* SDWebImageSwiftUI */; };
-		6A5371622C5F12B100F70E16 /* Cepheus in Frameworks */ = {isa = PBXBuildFile; productRef = 6A5371612C5F12B100F70E16 /* Cepheus */; };
 		6A5371CE2C5F147600F70E16 /* qwasd头像.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6A5371CD2C5F147600F70E16 /* qwasd头像.gif */; };
+		6AAC557B2CAE789A009061AF /* Cepheus in Frameworks */ = {isa = PBXBuildFile; productRef = 6AAC557A2CAE789A009061AF /* Cepheus */; };
+		6AAC557D2CAE78DE009061AF /* EpicSaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAC557C2CAE78DE009061AF /* EpicSaleView.swift */; };
+		6AAC55802CAE7C9C009061AF /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 6AAC557F2CAE7C9C009061AF /* SwiftyJSON */; };
 		6AAC96CB2AB488DF00AB3D25 /* GameWatcher.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 6AAC96CA2AB488DF00AB3D25 /* GameWatcher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		6AAC96D02AB488DF00AB3D25 /* SteamToolApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAC96CF2AB488DF00AB3D25 /* SteamToolApp.swift */; };
 		6AAC96D22AB488DF00AB3D25 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAC96D12AB488DF00AB3D25 /* ContentView.swift */; };
@@ -48,6 +50,7 @@
 /* Begin PBXFileReference section */
 		6A108C822BD3C0C800CE755E /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		6A5371CD2C5F147600F70E16 /* qwasd头像.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "qwasd头像.gif"; sourceTree = "<group>"; };
+		6AAC557C2CAE78DE009061AF /* EpicSaleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpicSaleView.swift; sourceTree = "<group>"; };
 		6AAC96C42AB488DF00AB3D25 /* SteamTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SteamTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AAC96CA2AB488DF00AB3D25 /* GameWatcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameWatcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AAC96CF2AB488DF00AB3D25 /* SteamToolApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteamToolApp.swift; sourceTree = "<group>"; };
@@ -62,8 +65,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A5371622C5F12B100F70E16 /* Cepheus in Frameworks */,
+				6AAC557B2CAE789A009061AF /* Cepheus in Frameworks */,
 				6A5371602C5F115900F70E16 /* SDWebImageSwiftUI in Frameworks */,
+				6AAC55802CAE7C9C009061AF /* SwiftyJSON in Frameworks */,
 				6A53715E2C5F110000F70E16 /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,6 +99,7 @@
 				6A5371CD2C5F147600F70E16 /* qwasd头像.gif */,
 				6AAC96CF2AB488DF00AB3D25 /* SteamToolApp.swift */,
 				6AAC96D12AB488DF00AB3D25 /* ContentView.swift */,
+				6AAC557C2CAE78DE009061AF /* EpicSaleView.swift */,
 				6AAC96E32AB4907100AB3D25 /* AboutView.swift */,
 				6AF0A5D12AC5B43500ACC95E /* Assets.xcassets */,
 				6AAC96D52AB488E000AB3D25 /* Preview Content */,
@@ -146,7 +151,8 @@
 			packageProductDependencies = (
 				6A53715D2C5F110000F70E16 /* SwiftSoup */,
 				6A53715F2C5F115900F70E16 /* SDWebImageSwiftUI */,
-				6A5371612C5F12B100F70E16 /* Cepheus */,
+				6AAC557A2CAE789A009061AF /* Cepheus */,
+				6AAC557F2CAE7C9C009061AF /* SwiftyJSON */,
 			);
 			productName = "SteamTool Watch App";
 			productReference = 6AAC96CA2AB488DF00AB3D25 /* GameWatcher.app */;
@@ -182,8 +188,9 @@
 			mainGroup = 6AAC96BD2AB488DE00AB3D25;
 			packageReferences = (
 				6A53715A2C5F0EC000F70E16 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
-				6A53715B2C5F0ECE00F70E16 /* XCRemoteSwiftPackageReference "Cepheus" */,
 				6A53715C2C5F0FB100F70E16 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+				6AAC55792CAE789A009061AF /* XCRemoteSwiftPackageReference "Cepheus" */,
+				6AAC557E2CAE7C9B009061AF /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 			);
 			productRefGroup = 6AAC96C52AB488DF00AB3D25 /* Products */;
 			projectDirPath = "";
@@ -224,6 +231,7 @@
 			files = (
 				6AAC96D22AB488DF00AB3D25 /* ContentView.swift in Sources */,
 				6AAC96E42AB4907100AB3D25 /* AboutView.swift in Sources */,
+				6AAC557D2CAE78DE009061AF /* EpicSaleView.swift in Sources */,
 				6AAC96D02AB488DF00AB3D25 /* SteamToolApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -496,7 +504,15 @@
 				minimumVersion = 3.1.1;
 			};
 		};
-		6A53715B2C5F0ECE00F70E16 /* XCRemoteSwiftPackageReference "Cepheus" */ = {
+		6A53715C2C5F0FB100F70E16 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.3;
+			};
+		};
+		6AAC55792CAE789A009061AF /* XCRemoteSwiftPackageReference "Cepheus" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Serene-Garden/Cepheus";
 			requirement = {
@@ -504,12 +520,12 @@
 				kind = branch;
 			};
 		};
-		6A53715C2C5F0FB100F70E16 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+		6AAC557E2CAE7C9B009061AF /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/scinfu/SwiftSoup";
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 2.7.3;
+				minimumVersion = 5.0.2;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -525,10 +541,15 @@
 			package = 6A53715A2C5F0EC000F70E16 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
 			productName = SDWebImageSwiftUI;
 		};
-		6A5371612C5F12B100F70E16 /* Cepheus */ = {
+		6AAC557A2CAE789A009061AF /* Cepheus */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6A53715B2C5F0ECE00F70E16 /* XCRemoteSwiftPackageReference "Cepheus" */;
+			package = 6AAC55792CAE789A009061AF /* XCRemoteSwiftPackageReference "Cepheus" */;
 			productName = Cepheus;
+		};
+		6AAC557F2CAE7C9C009061AF /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6AAC557E2CAE7C9B009061AF /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

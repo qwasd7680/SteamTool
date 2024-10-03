@@ -49,8 +49,10 @@ struct ContentView: View {
         TabView{
             MainView()
                 .tag(1)
-            AboutView()
+            EpicSaleView()
                 .tag(2)
+            AboutView()
+                .tag(3)
         }
     }
 }

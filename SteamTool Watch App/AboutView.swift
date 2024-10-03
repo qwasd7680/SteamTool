@@ -159,6 +159,9 @@ struct Xuke:View {
                 Licensed under Apache-2.0 license
                 -----------------
                 
+                --- SwiftyJSON ---
+                Licensed under MIT license
+                ------------------
                 """
     var body: some View {
         ScrollView{

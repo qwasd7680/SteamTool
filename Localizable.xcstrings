@@ -1,5 +1,5 @@
 {
-  "sourceLanguage" : "en",
+  "sourceLanguage" : "zh-Hans",
   "strings" : {
     " 应用信息" : {
       "localizations" : {
@@ -34,7 +34,24 @@
       }
     },
     " 设置" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Settings"
+          }
+        }
+      }
+    },
+    "Epic限免" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Epic Free Game"
+          }
+        }
+      }
     },
     "qwasd" : {
       "localizations" : {
@@ -128,7 +145,14 @@
       }
     },
     "使用Cephues键盘" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Use Cepheus KeyBoard"
+          }
+        }
+      }
     },
     "使用愉快🌹🌹" : {
       "localizations" : {
@@ -158,6 +182,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "关于我们"
+          }
+        }
+      }
+    },
+    "即将限免" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Coming Soon"
           }
         }
       }
@@ -264,25 +298,8 @@
         }
       }
     },
-    "提了很多建议" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Gave lots of advices"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "提了很多建议"
-          }
-        }
-      }
-    },
     "浙ICP备2024071295号-16A" : {
-
+      "shouldTranslate" : false
     },
     "特别鸣谢" : {
       "localizations" : {
