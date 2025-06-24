@@ -59,6 +59,9 @@
         }
       }
     },
+    "Maverick-Charmer@qwassd.top" : {
+      "shouldTranslate" : false
+    },
     "qwasd" : {
       "localizations" : {
         "en" : {
@@ -73,23 +76,8 @@
             "value" : "qwasd"
           }
         }
-      }
-    },
-    "sjbstudio233@gmail.com" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "sjbstudio233@gmail.com"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "sjbstudio233@gmail.com"
-          }
-        }
-      }
+      },
+      "shouldTranslate" : false
     },
     "Steam特惠游戏" : {
       "localizations" : {
@@ -115,7 +103,8 @@
             "value" : "ThreeManager785"
           }
         }
-      }
+      },
+      "shouldTranslate" : false
     },
     "WindowsMEMZ" : {
       "localizations" : {
@@ -131,7 +120,8 @@
             "value" : "WindowsMEMZ"
           }
         }
-      }
+      },
+      "shouldTranslate" : false
     },
     "使用Cepheus" : {
       "extractionState" : "manual",
@@ -177,10 +167,24 @@
       }
     },
     "免费" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Free"
+          }
+        }
+      }
     },
     "免费领取" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Get for free"
+          }
+        }
+      }
     },
     "关于我们" : {
       "localizations" : {
@@ -194,17 +198,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "关于我们"
-          }
-        }
-      }
-    },
-    "即将限免" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Coming Soon"
           }
         }
       }
@@ -295,24 +288,25 @@
         }
       }
     },
-    "开发者是一名高中生，因为在学校里常年不知道Steam促销的信息而经常错过打折，于是写了这款软件，方便在学校里查看Steam的促销信息" : {
+    "开发者是一名高中生（现在毕业了🎉🎉🎉），因为在学校里常年不知道Steam促销的信息而经常错过打折，于是写了这款软件，方便在学校里查看Steam的促销信息" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Developer is in high school. I written this app for checking promotional informations at school since i usually cannot get Steam promotional informations and miss discounts."
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "开发者是一名高中生，因为在学校里常年不知道Steam促销的信息而经常错过打折，于是写了这款软件，方便在学校里查看Steam的促销信息"
+            "value" : "The developer is a high school student (now graduated 🎉🎉🎉), who often missed discounts because he didn't know about Steam promotions in school. So he wrote this software to make it easier to check Steam promotions in school."
           }
         }
       }
     },
     "截止" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "expiration date"
+          }
+        }
+      }
     },
     "浙ICP备2024071295号-16A" : {
       "shouldTranslate" : false
@@ -334,7 +328,14 @@
       }
     },
     "确定" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Confirm"
+          }
+        }
+      }
     },
     "网络请求失败" : {
       "localizations" : {

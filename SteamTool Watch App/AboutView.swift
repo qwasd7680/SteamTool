@@ -47,7 +47,7 @@ struct AboutView: View {
                     HStack {
                         Image(systemName: "envelope")
                             .foregroundColor(.blue)
-                        Link("sjbstudio233@gmail.com", destination: URL(string: "mailto:$sjbstudio233@gmail.com")!)
+                        Link("Maverick-Charmer@qwassd.top", destination: URL(string: "mailto:$Maverick-Charmer@qwassd.top")!)
                     }
                 }
                 Section(header: Text("备案号")) {
@@ -133,7 +133,7 @@ struct About:View {
     var body: some View {
         List{
             Section{
-                Text("开发者是一名高中生，因为在学校里常年不知道Steam促销的信息而经常错过打折，于是写了这款软件，方便在学校里查看Steam的促销信息")
+                Text("开发者是一名高中生（现在毕业了🎉🎉🎉），因为在学校里常年不知道Steam促销的信息而经常错过打折，于是写了这款软件，方便在学校里查看Steam的促销信息")
                 Text("希望它也能帮助您不落下每一次促销")
                 Text("使用愉快🌹🌹")
             }
