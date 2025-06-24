@@ -1,6 +1,9 @@
 {
   "sourceLanguage" : "zh-Hans",
   "strings" : {
+    "" : {
+
+    },
     " 应用信息" : {
       "localizations" : {
         "en" : {
@@ -42,6 +45,9 @@
           }
         }
       }
+    },
+    "%@:" : {
+
     },
     "Epic限免" : {
       "localizations" : {
@@ -170,6 +176,12 @@
         }
       }
     },
+    "免费" : {
+
+    },
+    "免费领取" : {
+
+    },
     "关于我们" : {
       "localizations" : {
         "en" : {
@@ -187,6 +199,7 @@
       }
     },
     "即将限免" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -298,6 +311,9 @@
         }
       }
     },
+    "截止" : {
+
+    },
     "浙ICP备2024071295号-16A" : {
       "shouldTranslate" : false
     },
@@ -316,6 +332,9 @@
           }
         }
       }
+    },
+    "确定" : {
+
     },
     "网络请求失败" : {
       "localizations" : {

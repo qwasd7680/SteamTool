@@ -154,31 +154,22 @@ struct searchView:View {
 
 struct detailView:View {
     let game: Game
-    private static let standartPadding: CGFloat = 20
     
     var body: some View {
-        GeometryReader { geometry in
-            let size = geometry.size
+        ScrollView{
             VStack{
                 WebImage(url:URL(string:game.picurl))
-                .frame(
-                    maxWidth: size.width - Self.standartPadding * 2,
-                    idealHeight:
-                        getIdealHeight(
-                            geometrySize: size,
-                            aspectRatio: 2 / 3
-                        )
-                )
+                    .resizable()
+                    .indicator(.activity)
+                    .transition(.fade(duration: 0.5))
+                    .scaledToFit()
+                    .frame(maxWidth: .infinity)
+                    .cornerRadius(12)
+                    .shadow(radius: 5) // 添加阴影效果
+                    .padding(.bottom, 5)
                 GameView(game: game)
             }
         }
-    }
-    private func getIdealHeight(
-        geometrySize: CGSize,
-        aspectRatio: CGFloat
-    ) -> CGFloat {
-        let width = geometrySize.width - Self.standartPadding * 2
-        return width / aspectRatio
     }
 }
 
